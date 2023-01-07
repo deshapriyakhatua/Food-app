@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        // hiding action bar
         getSupportActionBar().hide();
 
         setSupportActionBar(binding.appBarMain.toolbar);
