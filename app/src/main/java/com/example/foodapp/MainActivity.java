@@ -7,6 +7,7 @@ import android.view.Menu;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
+import androidx.core.view.WindowCompat;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -31,6 +32,9 @@ public class MainActivity extends AppCompatActivity {
 
         // hiding action bar
         getSupportActionBar().hide();
+
+
+        WindowCompat.setDecorFitsSystemWindows(getWindow(),false);
 
         setSupportActionBar(binding.appBarMain.toolbar);
         binding.appBarMain.fab.setOnClickListener(new View.OnClickListener() {
