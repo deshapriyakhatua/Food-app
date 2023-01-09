@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         // hiding action bar
         getSupportActionBar().hide();
 
-
+        // hiding status bar
         WindowCompat.setDecorFitsSystemWindows(getWindow(),false);
 
         setSupportActionBar(binding.appBarMain.toolbar);
