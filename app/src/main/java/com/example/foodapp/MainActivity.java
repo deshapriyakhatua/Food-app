@@ -30,8 +30,6 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        // hiding action bar
-        getSupportActionBar().hide();
 
         // hiding status bar
         WindowCompat.setDecorFitsSystemWindows(getWindow(),false);
